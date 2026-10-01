@@ -6,7 +6,7 @@ An animated personal website (light design) with a built-in admin dashboard. A B
 index.html, about.html, skills.html, experience.html, research.html,
 projects.html, certificates.html, education.html, honors.html,
 blog.html, post.html, contact.html   ← one file per page (all share the same layout)
-admin/              ← your private dashboard  →  https://<you>.github.io/admin/
+<secret-folder>/     ← your private dashboard (folder name kept secret; not linked anywhere)
 data/content.json   ← ALL site content lives here
 assets/uploads/     ← images & PDFs you upload from the admin panel
 css/style.css       ← design (Sky & Lavender theme)
@@ -41,7 +41,7 @@ The admin panel saves changes by committing to your repository, so it needs a Gi
 
 ## 3. Edit your site
 
-1. Visit **`https://<your-username>.github.io/admin/`**. The link isn't shown anywhere on the site, and search engines are told not to index it.
+1. Visit **`https://<your-username>.github.io/<your-secret-folder>/`**. The link isn't shown anywhere on the site, and search engines are told not to index it.
 2. Enter your GitHub username, the repository name, branch `main`, and paste your token. Tick *Remember on this device* only on your own computer.
 3. Edit anything you like:
    - **Profile:** name, photo, job titles, bio, CV, contact details and social links
@@ -75,9 +75,9 @@ Browsers block loading `content.json` from a double-clicked file, so run a tiny 
 python -m http.server 8000
 ```
 
-Then open <http://localhost:8000> for the site and <http://localhost:8000/admin/> for the editor. In the editor, choose **Work locally**. **Download** saves a new `content.json`, which you put into the `data/` folder yourself.
+Then open <http://localhost:8000> for the site and `http://localhost:8000/<your-secret-folder>/` for the editor. In the editor, choose **Work locally**. **Download** saves a new `content.json`, which you put into the `data/` folder yourself.
 
 ## Security notes
 - The token is stored only in your browser. It is sent only to `api.github.com`.
-- Anyone can open `/admin/`, but nobody can change anything without a valid token for your repository.
+- Even if someone finds the editor folder, nobody can change anything without a valid token for your repository.
 - If a token is ever exposed, delete it at <https://github.com/settings/tokens?type=beta> and create a new one.

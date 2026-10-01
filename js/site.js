@@ -154,7 +154,6 @@
             ${cvButton('btn btn-ghost')}
           </div>
           ${nonEmpty(p.socials) ? `<div class="hero-social h-in" style="--delay:1.05s">${socialLinks(p.socials)}</div>` : ''}
-          ${!name ? `<p class="setup-note h-in" style="--delay:1s"><i class="fa-solid fa-wand-magic-sparkles"></i><span>This site is ready for your content — open the <a href="admin/" data-no-transition>admin dashboard</a> to add your details.</span></p>` : ''}
         </div>
         <div class="hero-visual h-in" style="--delay:.35s">
           <div class="photo-ring"></div>

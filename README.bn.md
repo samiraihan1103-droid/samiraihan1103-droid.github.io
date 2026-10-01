@@ -17,7 +17,7 @@
    ```
 4. ব্রাউজারে খুলুন:
    - ওয়েবসাইট: <http://localhost:8000>
-   - অ্যাডমিন ড্যাশবোর্ড: <http://localhost:8000/admin/>
+   - অ্যাডমিন ড্যাশবোর্ড: `http://localhost:8000/<আপনার-গোপন-ফোল্ডার>/`
 5. বন্ধ করতে Terminal-এ **Ctrl + C** চাপুন।
 
 > ⚠️ `index.html` ফাইলে ডাবল-ক্লিক করে খুললে সাইট কাজ করবে না। সবসময় উপরের কমান্ড দিয়ে চালান।
@@ -25,7 +25,7 @@
 
 ## ধাপ ২ — লোকালি তথ্য যোগ করা (Local mode)
 
-1. <http://localhost:8000/admin/> খুলুন এবং **"Work locally"** বাটনে চাপুন।
+1. `http://localhost:8000/<আপনার-গোপন-ফোল্ডার>/` খুলুন এবং **"Work locally"** বাটনে চাপুন।
 2. **Dashboard**-এ দেখবেন কতটুকু সম্পূর্ণ হয়েছে (% চিহ্ন), একটি চেকলিস্ট, আর "New project", "New certificate", "Write a post"-এর মতো দ্রুত বাটন।
 3. বাম পাশের মেনু থেকে **Profile**, **Projects**, **Certificates** ইত্যাদিতে গিয়ে তথ্য লিখুন।
 4. **Preview** চাপলে আপনার পরিবর্তনসহ সাইটটি দেখা যাবে।
@@ -49,7 +49,7 @@ Admin থেকে সরাসরি সাইট আপডেট করতে 
 3. **Repository access → Only select repositories** → আপনার সাইটের রিপোজিটরি বেছে নিন।
 4. **Permissions → Repository permissions → Contents → "Read and write"** দিন।
 5. **Generate token** চাপুন এবং টোকেনটি (`github_pat_...`) কপি করুন।
-6. `https://আপনার-username.github.io/admin/` খুলুন। Username, Repository, Branch (`main`) ও Token দিয়ে **Connect** চাপুন।
+6. `https://আপনার-username.github.io/<আপনার-গোপন-ফোল্ডার>/` খুলুন। Username, Repository, Branch (`main`) ও Token দিয়ে **Connect** চাপুন।
 7. তথ্য যোগ/পরিবর্তন করে **Publish** চাপুন (বা **Ctrl + S**)। ১–২ মিনিটে সাইট আপডেট হবে। পুরোনো সাইট দেখালে **Ctrl + F5** চাপুন।
 
 ## আগের ভার্সন আপডেট করা (GitHub-এ আগে আপলোড করে থাকলে)

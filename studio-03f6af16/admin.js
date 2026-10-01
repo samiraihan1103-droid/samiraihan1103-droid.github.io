@@ -70,8 +70,9 @@
     const host = location.hostname;
     if (!host.endsWith('github.io')) return {};
     const owner = host.split('.')[0];
-    const first = location.pathname.split('/').filter(Boolean)[0];
-    return { owner, repo: first && first !== 'admin' ? first : `${owner}.github.io` };
+    // The editor folder has a secret name, so judge by depth: /<editor>/ → user site, /<repo>/<editor>/ → project site.
+    const parts = location.pathname.split('/').filter((p) => p && p !== 'index.html');
+    return { owner, repo: parts.length >= 2 ? parts[0] : `${owner}.github.io` };
   }
   function readCfg() { try { return JSON.parse(localStorage.getItem(CFG_KEY)) || {}; } catch (e) { return {}; } }
 
@@ -601,6 +602,10 @@
       } finally { btn.disabled = false; }
     });
     $('#local-btn').addEventListener('click', startLocal);
+    // Local mode only makes sense on your own computer; on the public site the token login is the only way in.
+    if (!/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) {
+      ['#local-btn', '.login .divider', '.login .tiny'].forEach((s) => { const el = $(s); if (el) el.hidden = true; });
+    }
     $('#logout-btn').addEventListener('click', logout);
     $('#save-btn').addEventListener('click', save);
     $('#preview-btn').addEventListener('click', () => {
