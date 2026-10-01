@@ -1,0 +1,155 @@
+{
+  "site": {
+    "title": "Portfolio",
+    "description": "",
+    "accent": "#6D5DF6",
+    "accent2": "#F472B6",
+    "favicon": "",
+    "preloader": true,
+    "cursor": true,
+    "footerNote": "",
+    "footerHeadline": "Let's build something *together.*"
+  },
+  "profile": {
+    "name": "",
+    "shortName": "",
+    "eyebrow": "",
+    "roles": [],
+    "headline": "",
+    "tagline": "",
+    "bio": "",
+    "photo": "",
+    "location": "",
+    "email": "",
+    "phone": "",
+    "availability": "",
+    "cv": "",
+    "facts": [],
+    "socials": [],
+    "focus": []
+  },
+  "stats": [],
+  "sections": [
+    {
+      "id": "about",
+      "show": true,
+      "inNav": true,
+      "navLabel": "About",
+      "kicker": "About",
+      "title": "Hello, I am *glad you are here.*",
+      "subtitle": "",
+      "desc": ""
+    },
+    {
+      "id": "skills",
+      "show": true,
+      "inNav": false,
+      "navLabel": "Skills",
+      "kicker": "Skills",
+      "title": "Tools & *strengths.*",
+      "subtitle": "",
+      "desc": ""
+    },
+    {
+      "id": "experience",
+      "show": true,
+      "inNav": true,
+      "navLabel": "Experience",
+      "kicker": "Experience",
+      "title": "Roles and *work.*",
+      "subtitle": "",
+      "desc": ""
+    },
+    {
+      "id": "research",
+      "show": true,
+      "inNav": true,
+      "navLabel": "Research",
+      "kicker": "Research",
+      "title": "Research *interests.*",
+      "subtitle": "",
+      "desc": ""
+    },
+    {
+      "id": "projects",
+      "show": true,
+      "inNav": true,
+      "navLabel": "Projects",
+      "kicker": "Projects",
+      "title": "Things I *build.*",
+      "subtitle": "",
+      "desc": ""
+    },
+    {
+      "id": "certificates",
+      "show": true,
+      "inNav": false,
+      "navLabel": "Certificates",
+      "kicker": "Certificates",
+      "title": "Certificates & *courses.*",
+      "subtitle": "",
+      "desc": ""
+    },
+    {
+      "id": "education",
+      "show": true,
+      "inNav": true,
+      "navLabel": "Education",
+      "kicker": "Education",
+      "title": "Where I *learned.*",
+      "subtitle": "",
+      "desc": ""
+    },
+    {
+      "id": "honors",
+      "show": true,
+      "inNav": false,
+      "navLabel": "Honors",
+      "kicker": "Honors",
+      "title": "Honors & *achievements.*",
+      "subtitle": "",
+      "desc": ""
+    },
+    {
+      "id": "blog",
+      "show": true,
+      "inNav": true,
+      "navLabel": "Blog",
+      "kicker": "Blog",
+      "title": "Notes & *articles.*",
+      "subtitle": "",
+      "desc": ""
+    },
+    {
+      "id": "contact",
+      "show": true,
+      "inNav": true,
+      "navLabel": "Contact",
+      "kicker": "Contact",
+      "title": "Let's *talk.*",
+      "subtitle": "",
+      "desc": ""
+    }
+  ],
+  "skills": {
+    "marquee": [],
+    "groups": []
+  },
+  "experience": [],
+  "research": {
+    "interests": [],
+    "publications": []
+  },
+  "projects": [],
+  "certificates": [],
+  "education": [],
+  "honors": [],
+  "volunteering": [],
+  "testimonials": [],
+  "blog": [],
+  "contact": {
+    "text": "",
+    "formspreeId": "",
+    "showForm": true
+  }
+}
